@@ -1,5 +1,6 @@
 # c19-126-t-data-bi
 Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inversiones
+![image](https://github.com/No-Country-simulation/c19-126-t-data-bi/assets/77640142/c9ff09e7-34e1-4c88-93f7-371d9f923b7d)
 
 
 ###  Contacto:
