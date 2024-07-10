@@ -40,7 +40,7 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
 | Patricia Olivares | Data Analyst                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn]()  
 | Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
 | Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
-| Yair Fabricio   | Data Analyst                          | [GitHub]()  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  |
+| Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub]()  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  |
 | Johanna Procopio  | Data Analyst                          | [GitHub]   () [LinkedInhttps://www.linkedin.com/in/johanna-p-7bb0b0194 |
 | Anna Clara   | Data Analyst                          | [GitHub]()  | [LinkedIn]()  |
 | Manuel Lagunas   | Data Analyst                          | [GitHub]()  | [LinkedIn]()  |
