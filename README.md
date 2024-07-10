@@ -101,4 +101,4 @@ Este mockup describe la estructura y componentes del dashboard técnico en Power
 | Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub]()  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  |
 | Johanna Procopio  | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
 | Anna Clara   | Data Analyst                          | [GitHub]()  | [LinkedIn]()  |
-| Manuel Lagunas   | Data Analyst                          | [GitHub]()  | [LinkedIn]()  |
+| Manuel Lagunas   | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
