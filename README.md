@@ -2,8 +2,35 @@
 Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inversiones
 ![image](https://github.com/No-Country-simulation/c19-126-t-data-bi/assets/77640142/c9ff09e7-34e1-4c88-93f7-371d9f923b7d)
 
+### 📝 Índice:
 
-###  Contacto:
+- [**Introducción**](#introducción)
+- [**Resumen**](#resumen)
+- [**Conceptos Claves**](#conceptos-claves)
+- [**Público Objetivo**](#público-objetivo)
+- [**Metodología**](#metodología)
+   - [**Datos**](#datos)
+   - [**Etapas del Proyecto**](#etapas-del-proyecto)
+       - [**Mockup técnico**](#mockup-técnico)
+       - [**Mockup sentimiento**](#mockup-sentimiento)
+       - [**Mockup predictivo**](#mockup-predictivo)
+- [**Visualización en Power BI**](#visualización-en-power-bi)
+- [**Herramientas y librerías utilizadas en el proyecto**](#herramientas-y-librerías-utilizadas-en-el-proyecto)
+- [**Contacto**](#contacto)
+
+### Introducción:
+### Resumen:
+### Conceptos Claves:
+### Público Objetivo:
+### Metodología:
+### Datos:
+### Etapas del Proyecto:
+   ### Mockup técnico:
+   ### Mockup sentimiento:
+   ### Mockup predictivo:
+### Visualización en Power BI
+### Herramientas y librerías utilizadas en el proyecto:
+### Contacto:
 
 | Integrantes          | Rol                                     | GitHub                                        | LinkedIn                                                                           |
 |----------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
