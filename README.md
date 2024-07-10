@@ -37,7 +37,7 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
 | Maira Alejandra Pinilla   | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
 | Lorena Tito Ramos       | Data Analyst                       | [GitHub]()       | [LinkedIn]()                                 |
 | Sergio González Rivera | Data Analyst / Data Scientist      | [GitHub]() | [LinkedIn]()   
-| Patricia Olivares | Data Analyst                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn]()  
+| Patricia Olivares Delgado | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
 | Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
 | Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
 | Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub]()  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  |
