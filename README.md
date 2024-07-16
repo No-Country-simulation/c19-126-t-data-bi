@@ -29,6 +29,8 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
  
    ### Mockup técnico:
    ### Mockup sentimiento:
+Link de referencia dataset: [Dataset](https://ieee-dataport.org/open-access/stock-market-tweets-data)
+   
    ### Mockup predictivo:
 
 ### Visualización en Power BI
