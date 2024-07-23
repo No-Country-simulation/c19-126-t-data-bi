@@ -1,5 +1,6 @@
 # Librerias
 import pandas as pd
+sys.path.append(os.getcwd())
 
 # close_value
 def close_value(dataframe):
