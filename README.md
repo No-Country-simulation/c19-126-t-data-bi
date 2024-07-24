@@ -32,7 +32,10 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
 - Link de referencia dataset: [Dataset origen](https://ieee-dataport.org/open-access/stock-market-tweets-data)
 - Dataset: [Dataset](https://drive.google.com/file/d/1EnUwTxiJfzeq9Pe1dRYqWd4JgWNyAshI/view?usp=sharing)
 - Dataset - Polaridad / subjetividad: [Dataset]()
-  
+- Librerías Python: Text Blob
+Text Blob es una biblioteca de Python para el procesamiento del lenguaje natural. Usar Text Blob para el análisis de sentimientos es bastante simple. Toma texto como entrada y puede devolver polaridad y subjetividad como salida.
+La polaridad determina el sentimiento del texto. Sus valores se encuentran en [-1,1] donde -1 denota un sentimiento muy negativo y 1 denota un sentimiento muy positivo.
+La subjetividad determina si un ingreso de texto es información objetiva o una opinión personal. Su valor se encuentra entre [0,1] donde un valor más cercano a 0 denota una información fáctica y un valor más cercano a 1 denota una opinión personal.[Referencia](https://www.analyticsvidhya.com/blog/2022/07/sentiment-analysis-using-python/)
    
    ### Mockup predictivo:
 
