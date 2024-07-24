@@ -42,6 +42,13 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 
 ### Visualización en Power BI
 ### Herramientas y librerías utilizadas en el proyecto:
+
+
+|  Libreria/herramienta    |   Logo                                    | Descripción                                                                                                           |
+|----------------------|-----------------------------------------|----------------------------------------------|
+| **Pandas**   |      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">   | Librería de Python para manipulación y análisis de datos.       |
+| **NumPy**     |  <img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d411fef5-109c-4731-be2f-8aba77141a2b" width="100">                      | Librería fundamental para computación numérica en Python.       | 
+
 - **Pandas**: Librería de Python para manipulación y análisis de datos.
   
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">
@@ -72,10 +79,26 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
   <br>
   <img src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2.svg" width="75">
 
-- **Scikit-learn** Librería de Python para aprendizaje automático.
+- **Scikit-learn**: Librería de Python para aprendizaje automático.
    <br>
   <img src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/d20e0b9abc4a4798d1fd839db50b19c01723094e/doc/logos/scikit-learn-logo.svg" width="150">
+- **Text Blob**: Es una biblioteca de Python (2 y 3) para procesar datos textuales.
+  <br>
+  <img src="https://cdn1.technologyevaluation.com/getattachment/c18a3ee5-30fb-5b53-bb73-294d78987b26/logo.png?source=tw2&ext=.png&maxSideSize=192" width="75">
+- **drawdb**: Herramienta de diseño de bases de datos para que los desarrolladores creen, colaboren y visualicen sus diagramas de relaciones entre entidades.
+  <br>
+  <img src="https://images.opencollective.com/drawdb/5252d15/logo/256.png?height=256" width="65">
+- **Jupyter**: Software gratuito, estándares abiertos y servicios web para informática interactiva en todos los lenguajes de programación.
+  <br>
+  <img src="https://jupyter.org/assets/homepage/main-logo.svg" width="65">
 
+- **Visual Studio Code **: Editor de código fuente.
+  <br>
+  <img src="https://static-00.iconduck.com/assets.00/visual-studio-code-icon-512x506-2fdb6ar6.png" width="70">
+- **MySQL**: Herramienta visual de diseño de bases de datos que integra desarrollo de software, administración de bases de datos, diseño de bases de datos, gestión y mantenimiento para el sistema de base de datos MySQL.
+  <br>
+  <img src="https://static-00.iconduck.com/assets.00/mysqlworkbench-icon-512x506-uen0mqej.png" width="65">
+  
 - **Colaboratory con Python**: Utilizaremos Colaboratory, una plataforma de Google basada en Jupyter Notebooks, junto con las potentes librerías de Python para análisis de datos como Pandas, NumPy y Matplotlib.
   
    <img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="60">
@@ -88,7 +111,7 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
   
   <img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d2d14fd6-5221-4a73-97e1-8f5d5c9cecb9" width="50">
 
-- **Figma**:
+- **Figma**: Editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web.
    <br>
   <img src="https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png" width="65">
    
