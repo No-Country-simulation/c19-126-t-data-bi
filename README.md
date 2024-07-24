@@ -120,6 +120,6 @@ Link de referencia dataset: [Dataset](https://ieee-dataport.org/open-access/stoc
 | Patricia Olivares Delgado | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
 | Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
 | Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
-| Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub]()  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  |
+| Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
 | Johanna Procopio  | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
 | Manuel Lagunas   | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
