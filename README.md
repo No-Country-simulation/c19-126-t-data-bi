@@ -29,9 +29,10 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
  
    ### Mockup técnico:
    ### Mockup sentimiento:
-Link de referencia dataset: [Dataset origen](https://ieee-dataport.org/open-access/stock-market-tweets-data)
-Dataset: [Dataset](https://drive.google.com/file/d/1EnUwTxiJfzeq9Pe1dRYqWd4JgWNyAshI/view?usp=sharing)
-Dataset - Polaridad / subjetividad: [Dataset]()
+- Link de referencia dataset: [Dataset origen](https://ieee-dataport.org/open-access/stock-market-tweets-data)
+- Dataset: [Dataset](https://drive.google.com/file/d/1EnUwTxiJfzeq9Pe1dRYqWd4JgWNyAshI/view?usp=sharing)
+- Dataset - Polaridad / subjetividad: [Dataset]()
+  
    
    ### Mockup predictivo:
 
