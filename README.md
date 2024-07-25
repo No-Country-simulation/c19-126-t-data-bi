@@ -174,4 +174,4 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 | Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
 | Johanna Procopio  | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
 | Manuel Lagunas   | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
- <img src="https://media.licdn.com/dms/image/D4E35AQHSlvHVq4gpDA/profile-framedphoto-shrink_800_800/0/1712681544172?e=1722524400&v=beta&t=ZLxKS7UGfcMSt9ASotfxa_I8vlvnzL9wz-6uLUvMvig" width="100">
+# <img src="https://media.licdn.com/dms/image/D4E35AQHSlvHVq4gpDA/profile-framedphoto-shrink_800_800/0/1712681544172?e=1722524400&v=beta&t=ZLxKS7UGfcMSt9ASotfxa_I8vlvnzL9wz-6uLUvMvig" width="100">
