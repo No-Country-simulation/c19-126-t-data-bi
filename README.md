@@ -49,6 +49,19 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 | **Pandas**   |      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">   | Librería de Python para manipulación y análisis de datos.       |
 | **NumPy**     |  <img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d411fef5-109c-4731-be2f-8aba77141a2b" width="100">                      | Librería fundamental para computación numérica en Python.       | 
 | **drawdb**| <img src="https://images.opencollective.com/drawdb/5252d15/logo/256.png?height=256" width="65">| Herramienta de diseño de bases de datos para que los desarrolladores creen, colaboren y visualicen sus diagramas de relaciones entre entidades.|
+| **Jupyter**|<img src=>"https://jupyter.org/assets/homepage/main-logo.svg" width="65">| Software gratuito, estándares abiertos y servicios web para informática interactiva en todos los lenguajes de programación.|
+| **Visual Studio Code **|<img src=>"https://static-00.iconduck.com/assets.00/visual-studio-code-icon-512x506-2fdb6ar6.png" width="70">| Editor de código fuente.|
+| **MySQL**|<img src=>"https://static-00.iconduck.com/assets.00/mysqlworkbench-icon-512x506-uen0mqej.png" width="65">| Herramienta visual de diseño de bases de datos que integra desarrollo de software, administración de bases de datos, diseño de bases de datos, gestión y mantenimiento para el sistema de base de datos MySQL.|
+| **Colaboratory con Python**|<img src=>"https://colab.research.google.com/img/colab_favicon_256px.png" width="60">| Utilizaremos Colaboratory, una plataforma de Google basada en Jupyter Notebooks, junto con las potentes librerías de Python para análisis de datos como Pandas, NumPy y Matplotlib.|
+| **Power BI**|<img src=>"https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/21548f2c-e075-46c3-a055-a22b021b9fac" width="100">| Para la visualización de datos avanzada, aprovecharemos Power BI, una herramienta líder en el mercado para crear informes interactivos y paneles de control.|
+| **Canva**|<img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d2d14fd6-5221-4a73-97e1-8f5d5c9cecb9" width="50">| Es una plataforma de diseño gráfico y composición de imágenes.|
+| **Figma**|<img src="https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png" width="65">| Editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web.|
+| **Slack**|<img src="https://toppng.com/uploads/preview/slack-new-logo-icon-11609376883z32jbkf8kg.png" width="45">| Plataforma de comunicación para equipos.|
+| **Python**|<img src="https://seeklogo.com/images/P/python-logo-A32636CAA3-seeklogo.com.png" width="50">| Lenguaje de programación utilizado para análisis de datos y desarrollo de aplicaciones.|
+| **Google Drive**|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1024px-Google_Drive_icon_%282020%29.svg.png?20221103153031" width="50">| Servicio de almacenamiento y sincronización de archivos.|
+| **Zoom**|<img src="https://w7.pngwing.com/pngs/805/460/png-transparent-zoom-logo-thumbnail.png" width="70">| Plataforma de videoconferencia de Google. //cambio a Zoom|
+| **GitHub**|<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="100">| Plataforma de desarrollo colaborativo para proyectos de software.|
+| **Trello**|<img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" width="100">| Herramienta de gestión de proyectos y seguimiento de problemas. // Trello|
 
 - **Pandas**: Librería de Python para manipulación y análisis de datos.
   
