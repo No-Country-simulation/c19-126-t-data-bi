@@ -48,6 +48,7 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 |----------------------|-----------------------------------------|----------------------------------------------|
 | **Pandas**   |      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">   | Librería de Python para manipulación y análisis de datos.       |
 | **NumPy**     |  <img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d411fef5-109c-4731-be2f-8aba77141a2b" width="100">                      | Librería fundamental para computación numérica en Python.       | 
+| **drawdb**|<img src=>"https://images.opencollective.com/drawdb/5252d15/logo/256.png?height=256" width="65">| Herramienta de diseño de bases de datos para que los desarrolladores creen, colaboren y visualicen sus diagramas de relaciones entre entidades.|
 
 - **Pandas**: Librería de Python para manipulación y análisis de datos.
   
