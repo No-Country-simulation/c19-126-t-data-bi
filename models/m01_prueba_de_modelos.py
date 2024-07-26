@@ -6,6 +6,7 @@ import numpy as np
 
 import xgboost as xgb
 import lightgbm as lgb
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split, GridSearchCV, TimeSeriesSplit
 from sklearn.metrics import make_scorer, mean_squared_error
@@ -139,5 +140,77 @@ perform_grid_search(lr_pipeline, lr_param_grid, features_train_month, target_tra
 # Mostrar el DataFrame con los resultados
 print(results_df)
 
-# ========== Guardar los resultados ==========
+#  ---------- Guardar datos ----------
 results_df.to_csv('c19-126-t-data-bi/models/test_results.csv', index=False)
+
+
+# ========== Prueba de modelos con conjunto de validación ==========
+
+# ---------- Mejores parametros ----------
+best_params_xgb = {'n_estimators': 50, 'max_depth': 3, 'learning_rate': 0.01, 'subsample': 0.8}
+best_params_lgb = {'n_estimators': 50, 'max_depth': 3, 'learning_rate': 0.01, 'subsample': 0.8}
+best_params_lr = {'regressor__fit_intercept': False}
+
+#  ---------- Entrenamiento con los mejoresmodelos ----------
+xgb_model.set_params(**best_params_xgb)
+xgb_model.fit(features_train_next_day, target_train_next_day)
+
+lgb_model.set_params(**best_params_lgb)
+lgb_model.fit(features_train_next_day, target_train_next_day)
+
+lr_model = LinearRegression()
+lr_model.fit(features_train_next_day, target_train_next_day)
+
+#  ---------- Predicciones en el conjunto de validación ----------
+xgb_predictions = xgb_model.predict(features_test_next_day)
+lgb_predictions = lgb_model.predict(features_test_next_day)
+lr_predictions = lr_model.predict(features_test_next_day)
+
+#  ---------- Calculo de RMSE ----------
+xgb_rmse = np.sqrt(mean_squared_error(target_test_next_day, xgb_predictions))
+lgb_rmse = np.sqrt(mean_squared_error(target_test_next_day, lgb_predictions))
+lr_rmse = np.sqrt(mean_squared_error(target_test_next_day, lr_predictions))
+
+print(f'XGBoost RMSE: {xgb_rmse}')
+print(f'LightGBM RMSE: {lgb_rmse}')
+print(f'Linear Regression RMSE: {lr_rmse}')
+
+
+# ========== Graficado de resultados ==========
+plt.figure(figsize=(14, 7))
+
+#  Predicciones de XGBoost
+plt.subplot(1, 3, 1)
+plt.plot(target_test_next_day.index, target_test_next_day, label='Original', alpha=0.7)
+plt.plot(target_test_next_day.index, xgb_predictions, label='Predicción', alpha=0.7)
+plt.xlabel('Tiempo')
+plt.ylabel('Valor')
+plt.title('Predicciones de XGBoost')
+plt.legend()
+
+# Predicciones de LightGBM
+plt.subplot(1, 3, 2)
+plt.plot(target_test_next_day.index, target_test_next_day, label='Original', alpha=0.7)
+plt.plot(target_test_next_day.index, lgb_predictions, label='Predicción', alpha=0.7)
+plt.xlabel('Tiempo')
+plt.ylabel('Valor')
+plt.title('Predicciones de LightGBM')
+plt.legend()
+
+# Predicciones de Linear Regression
+plt.subplot(1, 3, 3)
+plt.plot(target_test_next_day.index, target_test_next_day, label='Original', alpha=0.7)
+plt.plot(target_test_next_day.index, lr_predictions, label='Predicción', alpha=0.7)
+plt.xlabel('Tiempo')
+plt.ylabel('Valor')
+plt.title('Predicciones de Regresión Lineal')
+plt.legend()
+
+plt.tight_layout()
+
+# Guardar la figura
+output_dir = 'c19-126-t-data-bi/models'
+os.makedirs(output_dir, exist_ok=True)
+plt.savefig(os.path.join(output_dir, 'predicciones_modelos.png'))
+
+plt.show()
