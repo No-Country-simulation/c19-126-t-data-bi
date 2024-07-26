@@ -47,8 +47,8 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 |  Librería/herramienta    |   Logo                                    | Descripción                                                                                                           |
 |----------------------|-----------------------------------------|----------------------------------------------|
 | **Pandas**   |      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">   | Librería de Python para manipulación y análisis de datos.       |
-| **NumPy**     |  <img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/d411fef5-109c-4731-be2f-8aba77141a2b" width="100">                      | Librería fundamental para computación numérica en Python.       | 
-|**Matplotlib**|<img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/34000e83-3e05-4e2c-9ed2-70cb0412ee3f" width="100">| Librería fundamental para la generación de gráficos en dos dimensiones.|
+| **NumPy**     |  <img src="https://numpy.org/images/logo.svg" width="50">                      | Librería fundamental para computación numérica en Python.       | 
+|**Matplotlib**|<img src="https://matplotlib.org/_static/logo_light.svg" width="100">| Librería fundamental para la generación de gráficos en dos dimensiones.|
 |**Yfinance**|<img src="https://cdn6.aptoide.com/imgs/c/2/7/c271bd2b90b62b493e82435882c44846_icon.png?w=128" width="30">| API de Python para datos financieros de Yahoo Finance.|
 |**XGBoost**|<img src="https://miro.medium.com/v2/resize:fit:1190/1*yhE3CBwTrlXcAIvNJNTQiA.png" width="100">| Librería de Python para algoritmos de boosting.|
 |**Lightgbm**|<img src="https://www.kdnuggets.com/wp-content/uploads/chugh_lgbmclassifier_gettingstarted_guide_1.png" width="50">| Framework de aprendizaje automático basado en árboles.|
@@ -163,17 +163,23 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 
 ### Contacto:
 
-| Integrantes          | Rol                                     | GitHub                                        | LinkedIn                                                                           |
-|----------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
-| Maira Alejandra Pinilla   | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
-| Lorena Tito Ramos       | Data Analyst                       | [GitHub]()       | [LinkedIn](https://www.linkedin.com/in/lorenatitoramos/)                                 |
-| Sergio González Rivera | Data Analyst / Data Scientist      | [GitHub]() | [LinkedIn]()   
-| Patricia Olivares Delgado | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
-| Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
-| Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
-| Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
-| Johanna Procopio  | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
-| Manuel Lagunas   | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
-<img src="https://media.licdn.com/dms/image/D4E35AQHSlvHVq4gpDA/profile-framedphoto-shrink_800_800/0/1712681544172?e=1722524400&v=beta&t=ZLxKS7UGfcMSt9ASotfxa_I8vlvnzL9wz-6uLUvMvig" width="100" height="100" style="border-radius: 50%;">
+| Integrantes          |                                     |Rol                                     | GitHub                                        | LinkedIn                                                                           |
+|----------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
+| Maira Alejandra Pinilla   |       | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
+| Lorena Tito Ramos       | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n1--.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                       | [GitHub]()       | [LinkedIn](https://www.linkedin.com/in/lorenatitoramos/)                                 |
+| Sergio González Rivera | Project Manager/Data Analyst        |Data Analyst / Data Scientist      | [GitHub](https://github.com/gonzalezrivera) | [LinkedIn](https://www.linkedin.com/in/gonzalez-rivera/)   
+| Patricia Olivares Delgado |Project Manager/Data Analyst        | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
+| Sonia Calle   | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n4-.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
+| Micaela Pequeño   | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n5-.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
+| Yair Fabricio Cuno Rojas   |Project Manager/Data Analyst        | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
+| Johanna Procopio  |Project Manager/Data Analyst        | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
+| Manuel Lagunas   |Project Manager/Data Analyst        | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
 
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n1--.png" width="100" height="100" style="border-radius: 50%;">
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n3-.png" width="100" height="100" style="border-radius: 50%;">
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n4-.png" width="100" height="100" style="border-radius: 50%;">
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n5-.png" width="100" height="100" style="border-radius: 50%;">
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n6-.png" width="100" height="100" style="border-radius: 50%;">
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n7-.png" width="100" height="100" style="border-radius: 50%;">
 
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n8-f.png" width="100" height="100" style="border-radius: 50%;">
