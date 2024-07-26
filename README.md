@@ -163,17 +163,17 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 
 ### Contacto:
 
-| Integrantes          | Rol                                     | GitHub                                        | LinkedIn                                                                           |
-|----------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
-| Maira Alejandra Pinilla   | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
-| Lorena Tito Ramos       | Data Analyst                       | [GitHub]()       | [LinkedIn](https://www.linkedin.com/in/lorenatitoramos/)                                 |
-| Sergio González Rivera | Data Analyst / Data Scientist      | [GitHub](https://github.com/gonzalezrivera) | [LinkedIn](https://www.linkedin.com/in/gonzalez-rivera/)   
-| Patricia Olivares Delgado | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
-| Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
-| Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
-| Yair Fabricio Cuno Rojas   | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
-| Johanna Procopio  | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
-| Manuel Lagunas   | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
+| Integrantes          |                                     |Rol                                     | GitHub                                        | LinkedIn                                                                           |
+|----------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
+| Maira Alejandra Pinilla   |       | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
+| Lorena Tito Ramos       | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n1--.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                       | [GitHub]()       | [LinkedIn](https://www.linkedin.com/in/lorenatitoramos/)                                 |
+| Sergio González Rivera | Project Manager/Data Analyst        |Data Analyst / Data Scientist      | [GitHub](https://github.com/gonzalezrivera) | [LinkedIn](https://www.linkedin.com/in/gonzalez-rivera/)   
+| Patricia Olivares Delgado |Project Manager/Data Analyst        | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
+| Sonia Calle   | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n4-.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
+| Micaela Pequeño   | <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n5-.png" width="100" height="100" style="border-radius: 50%;">       |Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
+| Yair Fabricio Cuno Rojas   |Project Manager/Data Analyst        | Data Analyst                          | [GitHub](https://github.com/yairfabricio)  | [LinkedIn](https://www.linkedin.com/in/yair-cuno-rojas/)  |
+| Johanna Procopio  |Project Manager/Data Analyst        | Data Analyst                          | [GitHub](https://github.com/JohannaEP)  | [LinkedIn](https://www.linkedin.com/in/johanna-p-7bb0b0194)   |
+| Manuel Lagunas   |Project Manager/Data Analyst        | Data Analyst / Data Scientist                          | [GitHub](https://github.com/ManuelLagunas)  | [LinkedIn](www.linkedin.com/in/manuel-lagunas)  |
 
 <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n1--.png" width="100" height="100" style="border-radius: 50%;">
 <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n3-.png" width="100" height="100" style="border-radius: 50%;">
