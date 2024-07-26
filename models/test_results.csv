@@ -1,0 +1,10 @@
+Model,Timeframe,Best Parameters,Best RMSE Score
+XGBoost,Next Day,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",36.069973125591055
+XGBoost,Week,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",36.10356735232064
+XGBoost,Month,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",35.95057924005182
+LightGBM,Next Day,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",35.51083782675612
+LightGBM,Week,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",35.5135608145776
+LightGBM,Month,"{'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.8}",35.41139258331978
+Linear Regression,Next Day,{'regressor__fit_intercept': False},38.28181704792276
+Linear Regression,Week,{'regressor__fit_intercept': False},38.38913559893925
+Linear Regression,Month,{'regressor__fit_intercept': False},38.673772887401455
