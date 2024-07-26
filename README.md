@@ -182,4 +182,4 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n6-.png" width="100" height="100" style="border-radius: 50%;">
 <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n7-.png" width="100" height="100" style="border-radius: 50%;">
 <img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n8.png" width="100" height="100" style="border-radius: 50%;">
-
+<img src="https://github.com/No-Country-simulation/c19-126-t-data-bi/blob/main/files/documentation/presentations/n8-f.png" width="100" height="100" style="border-radius: 50%;">
