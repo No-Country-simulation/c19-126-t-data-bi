@@ -47,8 +47,8 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 |  Librería/herramienta    |   Logo                                    | Descripción                                                                                                           |
 |----------------------|-----------------------------------------|----------------------------------------------|
 | **Pandas**   |      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/1200px-Pandas_logo.svg.png" width="100">   | Librería de Python para manipulación y análisis de datos.       |
-| **NumPy**     |  <img src="https://numpy.org/images/logo.svg" width="100">                      | Librería fundamental para computación numérica en Python.       | 
-|**Matplotlib**|<img src="https://github.com/No-Country/c17-99-t-data-bi/assets/77640142/34000e83-3e05-4e2c-9ed2-70cb0412ee3f" width="100">| Librería fundamental para la generación de gráficos en dos dimensiones.|
+| **NumPy**     |  <img src="https://numpy.org/images/logo.svg" width="50">                      | Librería fundamental para computación numérica en Python.       | 
+|**Matplotlib**|<img src="https://matplotlib.org/_static/logo_light.svg" width="100">| Librería fundamental para la generación de gráficos en dos dimensiones.|
 |**Yfinance**|<img src="https://cdn6.aptoide.com/imgs/c/2/7/c271bd2b90b62b493e82435882c44846_icon.png?w=128" width="30">| API de Python para datos financieros de Yahoo Finance.|
 |**XGBoost**|<img src="https://miro.medium.com/v2/resize:fit:1190/1*yhE3CBwTrlXcAIvNJNTQiA.png" width="100">| Librería de Python para algoritmos de boosting.|
 |**Lightgbm**|<img src="https://www.kdnuggets.com/wp-content/uploads/chugh_lgbmclassifier_gettingstarted_guide_1.png" width="50">| Framework de aprendizaje automático basado en árboles.|
