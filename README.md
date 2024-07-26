@@ -167,7 +167,7 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 |----------------------|-----------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------|
 | Maira Alejandra Pinilla   | Project Manager/Data Analyst        | [GitHub](https://github.com/Malejandrapin)  | [LinkedIn](https://www.linkedin.com/in/maira-alejandra-pinilla-pinilla)       |
 | Lorena Tito Ramos       | Data Analyst                       | [GitHub]()       | [LinkedIn](https://www.linkedin.com/in/lorenatitoramos/)                                 |
-| Sergio González Rivera | Data Analyst / Data Scientist      | [GitHub]() | [LinkedIn]()   
+| Sergio González Rivera | Data Analyst / Data Scientist      | [GitHub](https://github.com/gonzalezrivera) | [LinkedIn](https://www.linkedin.com/in/gonzalez-rivera/)   
 | Patricia Olivares Delgado | Data Analyst / Python - SQL                          | [GitHub](https://github.com/Patricia0livares)  | [LinkedIn](https://www.linkedin.com/in/patricia-olivares-delgado-64496b52/)  
 | Sonia Calle   | Data Analyst                          | [GitHub](https://github.com/SoniaCalle)  | [LinkedIn](https://www.linkedin.com/in/sonia-calle)  
 | Micaela Pequeño   | Data Analyst                          | [GitHub](https://github.com/micaelapequeno)  | [LinkedIn](https://www.linkedin.com/in/micaelapequeno/)  
