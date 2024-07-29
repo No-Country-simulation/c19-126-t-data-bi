@@ -8,7 +8,7 @@ import xgboost as xgb
 import lightgbm as lgb
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split, GridSearchCV, TimeSeriesSplit
+from sklearn.model_selection import train_test_split, GridSearchCV, TimeSeriesSplit,cross_val_score
 from sklearn.metrics import make_scorer, mean_squared_error
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
@@ -144,42 +144,58 @@ print(results_df)
 results_df.to_csv('c19-126-t-data-bi/models/test_results.csv', index=False)
 
 
-# ========== Prueba de modelos con conjunto de validación ==========
+# ========== Prueba de modelos con conjunto de prueba ==========
 
 # ---------- Mejores parametros ----------
 best_params_xgb = {'n_estimators': 50, 'max_depth': 3, 'learning_rate': 0.01, 'subsample': 0.8}
 best_params_lgb = {'n_estimators': 50, 'max_depth': 3, 'learning_rate': 0.01, 'subsample': 0.8}
-best_params_lr = {'regressor__fit_intercept': False}
+best_params_lr = {'fit_intercept': False}
 
-#  ---------- Entrenamiento con los mejoresmodelos ----------
-xgb_model.set_params(**best_params_xgb)
+# ---------- Validación cruzada con series temporales ----------
+tscv = TimeSeriesSplit(n_splits=5)
+
+# ---------- Entrenamiento y validación cruzada con los mejores modelos ----------
+xgb_model = xgb.XGBRegressor(**best_params_xgb)
+xgb_rmse_scores = -cross_val_score(xgb_model, features_train_next_day, target_train_next_day, cv=tscv, scoring='neg_root_mean_squared_error')
+
+lgb_model = lgb.LGBMRegressor(**best_params_lgb)
+lgb_rmse_scores = -cross_val_score(lgb_model, features_train_next_day, target_train_next_day, cv=tscv, scoring='neg_root_mean_squared_error')
+
+lr_model = LinearRegression(**best_params_lr)
+lr_rmse_scores = -cross_val_score(lr_model, features_train_next_day, target_train_next_day, cv=tscv, scoring='neg_root_mean_squared_error')
+
+# ---------- Ajuste de los modelos ----------
 xgb_model.fit(features_train_next_day, target_train_next_day)
-
-lgb_model.set_params(**best_params_lgb)
 lgb_model.fit(features_train_next_day, target_train_next_day)
-
-lr_model = LinearRegression()
 lr_model.fit(features_train_next_day, target_train_next_day)
 
-#  ---------- Predicciones en el conjunto de validación ----------
+# ---------- Predicciones ----------
 xgb_predictions = xgb_model.predict(features_test_next_day)
 lgb_predictions = lgb_model.predict(features_test_next_day)
 lr_predictions = lr_model.predict(features_test_next_day)
 
-#  ---------- Calculo de RMSE ----------
-xgb_rmse = np.sqrt(mean_squared_error(target_test_next_day, xgb_predictions))
-lgb_rmse = np.sqrt(mean_squared_error(target_test_next_day, lgb_predictions))
-lr_rmse = np.sqrt(mean_squared_error(target_test_next_day, lr_predictions))
+# ---------- Calculo de RMSE con el conjunto de prueba ----------
+xgb_rmse_test = np.sqrt(mean_squared_error(target_test_next_day, xgb_predictions))
+lgb_rmse_test = np.sqrt(mean_squared_error(target_test_next_day, lgb_predictions))
+lr_rmse_test = np.sqrt(mean_squared_error(target_test_next_day, lr_predictions))
 
-print(f'XGBoost RMSE: {xgb_rmse}')
-print(f'LightGBM RMSE: {lgb_rmse}')
-print(f'Linear Regression RMSE: {lr_rmse}')
+# ---------- Promedio de RMSE ----------
+xgb_rmse = np.mean(xgb_rmse_scores)
+lgb_rmse = np.mean(lgb_rmse_scores)
+lr_rmse = np.mean(lr_rmse_scores)
 
+print(f'XGBoost RMSE (cross-validation): {xgb_rmse}')
+print(f'LightGBM RMSE (cross-validation): {lgb_rmse}')
+print(f'Linear Regression RMSE (cross-validation): {lr_rmse}')
+
+print(f'XGBoost RMSE (test set): {xgb_rmse_test}')
+print(f'LightGBM RMSE (test set): {lgb_rmse_test}')
+print(f'Linear Regression RMSE (test set): {lr_rmse_test}')
 
 # ========== Graficado de resultados ==========
 plt.figure(figsize=(14, 7))
 
-#  Predicciones de XGBoost
+# Predicciones de XGBoost
 plt.subplot(1, 3, 1)
 plt.plot(target_test_next_day.index, target_test_next_day, label='Original', alpha=0.7)
 plt.plot(target_test_next_day.index, xgb_predictions, label='Predicción', alpha=0.7)
