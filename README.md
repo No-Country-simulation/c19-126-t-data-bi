@@ -19,28 +19,44 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
 - [**Contacto**](#contacto)
 
 ### Introducción:
+ Este proyecto tiene como objetivo analizar las tendencias financieras en tres mercados principales: USA, Europa y Asia. Hemos seleccionado 10 acciones de cada mercado para estudiar. Actuando como una empresa consultora, proporcionamos insights y recomendaciones para un cliente que desea invertir en estos mercados. Nuestro análisis combina la experiencia de científicos de datos y analistas de datos para ofrecer insights completos y accionables.
 ### Resumen:
+ Recopilamos datos sobre precios de acciones y volúmenes de negociación para las 30 acciones seleccionadas (10 de cada mercado) durante un período significativo, desde el 30 de junio de 2014 hasta el 30 de junio de 2024. El conjunto de datos incluye las siguientes columnas para cada ticker: precio de apertura (open), precio de cierre (close), precio máximo (high), precio mínimo (low) y volumen de negociación (volume). Además, compilamos datos sobre los seguidores de estas acciones en diversas plataformas para medir el sentimiento e interés de los inversores.
 ### Conceptos Claves:
+ ◘ Tendencias Financieras: Análisis de cómo los precios de las acciones y otros indicadores financieros cambian con el tiempo.
+ ◘ Predicciones de Precios: Uso de modelos estadísticos y de machine learning para prever los precios futuros de las acciones.
+ ◘ Sentimiento del Inversor: Medición del interés y las emociones de los inversores respecto a las acciones, basada en datos de seguidores de varias plataformas.
 ### Público Objetivo:
+ Este informe está dirigido a inversores y gestores de fondos que buscan información detallada y basada en datos para tomar decisiones de inversión informadas en los mercados de USA, Europa y Asia. También es útil para analistas financieros y consultoras que trabajan en la identificación de oportunidades de inversión.
 ### Metodología:
+ Utilizamos metodologías ágiles para gestionar el proyecto, con reuniones diarias y herramientas de gestión de tareas como Trello para asignar y distribuir las tareas. Los científicos de datos realizaron el análisis exploratorio de datos (EDA) y desarrollaron modelos predictivos, mientras que los analistas de datos se centraron en la visualización de datos y la respuesta a preguntas clave del negocio.
 ### Datos:
+ Los datos fueron obtenidos de la biblioteca yfinance y abarcan el período desde el 30 de junio de 2014 hasta el 30 de junio de 2024. Los datos incluyen:
+
+Precios de apertura (open)
+Precios de cierre (close)
+Precios máximos (high)
+Precios mínimos (low)
+Volumen de negociación (volume)
+Datos de seguidores en diversas plataformas
+Datasets generados a través del 
 
 ### Etapas del Proyecto:
+ Recolección y Preparación de Datos: Obtención y limpieza de los datos necesarios para el análisis.
+ Análisis Exploratorio de Datos (EDA): Identificación de patrones y tendencias clave.
+ Modelado Predictivo: Creación de modelos para predecir precios futuros.
+ Análisis de Sentimiento: Evaluación del sentimiento de los inversores basado en datos de seguidores.
+ Visualización de Resultados: Creación de dashboards interactivos en Power BI.
  
    ### Mockup técnico:
+   El mockup técnico se centra en la estructura y funcionalidades de los dashboards creados en Power BI. Incluye gráficos de tendencias de precios, volúmenes de negociación y comparaciones entre mercados. Este mockup proporciona una visión clara y detallada de los principales indicadores financieros de cada mercado.
    ### Mockup sentimiento:
-- Link de referencia dataset: [Dataset origen](https://ieee-dataport.org/open-access/stock-market-tweets-data)
-- Dataset: [Dataset](https://drive.google.com/file/d/1EnUwTxiJfzeq9Pe1dRYqWd4JgWNyAshI/view?usp=sharing)
-- Dataset - Polaridad / subjetividad: [Dataset](https://docs.google.com/spreadsheets/d/1B0bQa6pWjZi6kwFQvEjPSrq6fSSCheAP/edit?usp=sharing&ouid=109115629674951064253&rtpof=true&sd=true)
-- Librerías Python: Text Blob
-  
-Text Blob es una biblioteca de Python para el procesamiento del lenguaje natural. Usar Text Blob para el análisis de sentimientos es bastante simple. Toma texto como entrada y puede devolver polaridad y subjetividad como salida.
-La polaridad determina el sentimiento del texto. Sus valores se encuentran en [-1,1] donde -1 denota un sentimiento muy negativo y 1 denota un sentimiento muy positivo.
-La subjetividad determina si un ingreso de texto es información objetiva o una opinión personal. Su valor se encuentra entre [0,1] donde un valor más cercano a 0 denota una información fáctica y un valor más cercano a 1 denota una opinión personal.[Referencia](https://www.analyticsvidhya.com/blog/2022/07/sentiment-analysis-using-python/)
-   
+   El mockup de sentimiento presenta el análisis del interés y las emociones de los inversores respecto a las acciones, basado en datos de seguidores de varias plataformas. Se muestran gráficos que ilustran el sentimiento positivo, negativo y neutral a lo largo del tiempo, así como su correlación con las variaciones de los precios de las acciones.
    ### Mockup predictivo:
+   El mockup predictivo incluye los resultados de los modelos de machine learning utilizados para prever los precios futuros de las acciones. Se muestran gráficos de predicción comparando los valores reales con los previstos, destacando la precisión de los modelos y los factores que más influyen en las predicciones.
 
 ### Visualización en Power BI
+ La visualización en Power BI integra todos los análisis anteriores en un dashboard interactivo que permite al usuario explorar los datos de manera intuitiva. Los usuarios pueden filtrar por mercado, acción y período de tiempo para obtener insights específicos. El dashboard también incluye herramientas para comparar tendencias entre diferentes mercados y analizar el impacto de diversos factores en los precios de las acciones.
 ### Herramientas y librerías utilizadas en el proyecto:
 
 
@@ -63,12 +79,13 @@ La subjetividad determina si un ingreso de texto es información objetiva o una 
 | **Power BI**|<img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Analysts_PBI?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=2000&qlt=99&fmt=png-alpha&fit=constrain" width="100">| Para la visualización de datos avanzada, aprovecharemos Power BI, una herramienta líder en el mercado para crear informes interactivos y paneles de control.|
 | **Canva**|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Canva_Logo.svg/250px-Canva_Logo.svg.png" width="100">| Es una plataforma de diseño gráfico y composición de imágenes.|
 | **Figma**|<img src="https://static-00.iconduck.com/assets.00/apps-figma-icon-512x512-uapiauws.png" width="65">| Editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web.|
+| **Power Point**|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Microsoft_PowerPoint_2013-2019_logo.svg/610px-Microsoft_PowerPoint_2013-2019_logo.svg.png" width="100">| Microsoft PowerPoint (PPT) es un software de ofimática diseñado para realizar presentación de diapositivas..|
 | **Slack**|<img src="https://toppng.com/uploads/preview/slack-new-logo-icon-11609376883z32jbkf8kg.png" width="45">| Plataforma de comunicación para equipos.|
 | **Python**|<img src="https://seeklogo.com/images/P/python-logo-A32636CAA3-seeklogo.com.png" width="50">| Lenguaje de programación utilizado para análisis de datos y desarrollo de aplicaciones.|
 | **Google Drive**|<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1024px-Google_Drive_icon_%282020%29.svg.png?20221103153031" width="50">| Servicio de almacenamiento y sincronización de archivos.|
-| **Zoom**|<img src="https://w7.pngwing.com/pngs/805/460/png-transparent-zoom-logo-thumbnail.png" width="70">| Plataforma de videoconferencia de Google. //cambio a Zoom|
+| **Zoom**|<img src="https://w7.pngwing.com/pngs/805/460/png-transparent-zoom-logo-thumbnail.png" width="70">| Plataforma de videoconferencia de Google.|
 | **GitHub**|<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="100">| Plataforma de desarrollo colaborativo para proyectos de software.|
-| **Trello**|<img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" width="100">| Herramienta de gestión de proyectos y seguimiento de problemas. // Trello|
+| **Trello**|<img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Trello_logo.svg" width="100">| Herramienta de gestión de proyectos y seguimiento de problemas.|
 
 
 ### Contacto:
