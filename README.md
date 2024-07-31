@@ -19,7 +19,7 @@ Repositorio del grupo 126 data bi, del proyecto Análisis de Tendencias de Inver
 - [**Contacto**](#contacto)
 
 ### Introducción:
- Este proyecto tiene como objetivo analizar las tendencias financieras en tres mercados principales: USA, Europa y Asia. Hemos seleccionado 10 acciones de cada mercado para estudiar. Actuando como una empresa consultora, proporcionamos insights y recomendaciones para un cliente que desea invertir en estos mercados. Nuestro análisis combina la experiencia de científicos de datos y analistas de datos para ofrecer insights completos y accionables.
+ Este proyecto tiene como objetivo analizar las tendencias financieras en tres mercados principales: USA, Europa y Asia. Hemos seleccionado 10 acciones de cada mercado para estudiar. Actuando como una empresa consultora, proporcionamos insights y recomendaciones para una institución que desea crear un fondo de inversión para clientes sin experiencia en el mercado de valores. Nuestro análisis combina la experiencia de científicos de datos y analistas de datos para ofrecer insights completos y accionables.
 ### Resumen:
  Recopilamos datos sobre precios de acciones y volúmenes de negociación para las 30 acciones seleccionadas (10 de cada mercado) durante un período significativo, desde el 30 de junio de 2014 hasta el 30 de junio de 2024. El conjunto de datos incluye las siguientes columnas para cada ticker: precio de apertura (open), precio de cierre (close), precio máximo (high), precio mínimo (low) y volumen de negociación (volume). Además, compilamos datos sobre los seguidores de estas acciones en diversas plataformas para medir el sentimiento e interés de los inversores.
 ### Conceptos Claves:
@@ -39,7 +39,7 @@ Precios máximos (high)
 Precios mínimos (low)
 Volumen de negociación (volume)
 Datos de seguidores en diversas plataformas
-Datasets generados a través del 
+Datasets generados a través de librerías de Python (predictivo y sentimiento)
 
 ### Etapas del Proyecto:
  Recolección y Preparación de Datos: Obtención y limpieza de los datos necesarios para el análisis.
@@ -57,6 +57,7 @@ Datasets generados a través del
 
 ### Visualización en Power BI
  La visualización en Power BI integra todos los análisis anteriores en un dashboard interactivo que permite al usuario explorar los datos de manera intuitiva. Los usuarios pueden filtrar por mercado, acción y período de tiempo para obtener insights específicos. El dashboard también incluye herramientas para comparar tendencias entre diferentes mercados y analizar el impacto de diversos factores en los precios de las acciones.
+
 ### Herramientas y librerías utilizadas en el proyecto:
 
 
