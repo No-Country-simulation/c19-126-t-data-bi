@@ -28,6 +28,17 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima.model import ARIMA
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 
+# ---------- Herramientas para el modelado ----------
+from statsforecast import StatsForecast
+from statsforecast.models import SklearnModel
+from statsforecast.models import AutoARIMA
+from statsforecast.models import SeasonalNaive
+from sklearn.linear_model import Lasso, Ridge
+from sklearn.ensemble import RandomForestRegressor
+from utilsforecast.plotting import plot_series
+from statsforecast.utils import ConformalIntervals
+from sklearn.preprocessing import StandardScaler
+
 # ---------- Metricas ----------
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import math
@@ -44,7 +55,7 @@ import yfinance as yf
 
 df = yf.download('AAPL', 
                       start='2014-06-30', 
-                      end='2024-06-30', 
+                      end='2024-06-28', 
                       progress=False, interval='1d')
 
 
@@ -216,3 +227,203 @@ series = df.Close
 result = seasonal_decompose(series, model='additive',period=7)
 figure = result.plot()
 plt.show()
+
+#  ---------- Mes ----------
+series = df.Close
+result = seasonal_decompose(series, model='additive',period=30)
+figure = result.plot()
+plt.show()
+
+#  ---------- Año ----------
+series = df.Close
+result = seasonal_decompose(series, model='additive',period=365)
+figure = result.plot()
+plt.show()
+
+
+# ========== Pruebas de estacionariedad/Prueba ADF (Dickey-Fuller aumentada) ==========
+
+# ---------- Función para el calculo ----------
+def test_stationarity(timeseries):
+    
+    #Determing rolling statistics
+    rolmean = timeseries.rolling(12).mean()
+    rolstd = timeseries.rolling(12).std()
+    
+    #Plot rolling statistics:
+    plt.figure(figsize=(15,5))
+    plt.plot(timeseries,color='blue',label='Original')
+    plt.plot(rolmean,color='red',label='Rolling Mean')
+    plt.plot(rolstd, color='black', label = 'Rolling Std')
+    plt.legend(loc='best')
+    plt.title('Rolling Mean and Standard Deviation')
+    plt.show(block=False)
+    
+    print("Results of dickey fuller test")
+    adft = adfuller(timeseries,autolag='AIC')
+    # output for dft will give us without defining what the values are.
+    #hence we manually write what values does it explains using a for loop
+    output = pd.Series(adft[0:4],index=['Test Statistics','p-value','No. of lags used','Number of observations used'])
+    print(output)
+
+# ---------- Prueba de estacionariedad ----------
+test_stationarity(df['Close'])
+
+# ========== Diferenciación ==========
+
+df['Stocks First Difference']=df['Close']-df['Close'].shift(1)
+df['Stocks Seasonal Difference']=df['Close']-df['Close'].shift(12)
+df['Stocks Seasonal+Daily Difference']=df['Stocks Seasonal Difference']-df['Stocks Seasonal Difference'].shift(1)
+
+adft = adfuller(df['Stocks First Difference'].dropna(),autolag='AIC')
+output = pd.Series(adft[0:4],index=['Estadísticas de prueba','valor p','No. de rezagos utilizados','Número de observaciones utilizadas'])
+print(output)
+
+adft = adfuller(df['Stocks Seasonal Difference'].dropna(),autolag='AIC')
+output = pd.Series(adft[0:4],index=['Estadísticas de prueba','valor p','No. de rezagos utilizados','Número de observaciones utilizadas'])
+print(output)
+
+adft = adfuller(df['Stocks Seasonal+Daily Difference'].dropna(),autolag='AIC')
+output = pd.Series(adft[0:4],index=['Estadísticas de prueba','valor p','No. de rezagos utilizados','Número de observaciones utilizadas'])
+print(output)
+
+df['Stocks First Difference'].plot();
+plt.show()
+
+# ========== Modelo ARIMA ==========
+
+acf_values = sm.tsa.acf(df["Close"])
+acf_values
+
+plot_acf(df["Stocks First Difference"].dropna(),lags=5,title="AutoCorrelation")
+plt.show()
+
+plot_acf(df["Stocks Seasonal Difference"].dropna(),lags=15,title="AutoCorrelation")
+plt.show()
+
+plot_acf(df["Stocks Seasonal+Daily Difference"].dropna(),lags=10,title="AutoCorrelation")
+plt.show()
+
+plot_pacf(df["Stocks First Difference"].dropna(),lags=5,title="Partial AutoCorrelation")
+plt.show()
+
+plot_pacf(df["Stocks Seasonal Difference"].dropna(),lags=15,title="Partial AutoCorrelation")
+plt.show()
+
+plot_pacf(df["Stocks Seasonal+Daily Difference"].dropna(),lags=10,title="Partial AutoCorrelation")
+plt.show()
+
+plt.figure(figsize=(18,8))
+sns.heatmap(df.corr(), annot=True, cmap="Set3_r",  fmt='.02f',)
+plt.show()
+
+# ========== Creación de cracteristicas y objetivo ==========
+
+sipi = df.copy()
+sipi = sipi.reset_index()
+print(sipi.columns)
+print(sipi.tail(32))
+
+ohe = sipi[['Date', 'Open', 'High', 'Low', 'Close', 'Adj Close', 'SMA_5', 'SMA_15', 'EMA_5' ]]
+ohe = ohe.rename(columns= {"Date":"ds", "Close": "y"})
+ohe["unique_id"] = 1
+ohe.head()
+
+train = ohe[ohe.ds<='2023-05-13'] 
+test = ohe[(ohe['ds'] > '2023-05-13')]
+
+test.drop("y",axis=1, inplace=True)
+
+print(train.head())
+print(test.head())
+print(train.shape)
+print(test.shape)
+
+
+# ========== Modelado ==========
+
+season_length = 7 
+
+# ---------- Escalado de caracteristicas ----------
+scaler = StandardScaler()
+train_scaled = train.copy()
+test_scaled = test.copy()
+
+features = ['Open', 'High', 'Low', 'Adj Close', 'SMA_5', 'SMA_15', 'EMA_5']
+train_scaled[features] = scaler.fit_transform(train[features])
+test_scaled[features] = scaler.transform(test[features])
+
+# ---------- Seleccion de modelos escalado ----------
+models = [AutoARIMA(season_length=season_length),
+          SeasonalNaive(season_length=season_length),
+          SklearnModel(Lasso(max_iter=20000, alpha=0.1)),
+          SklearnModel(Ridge(max_iter=20000, alpha=0.1)),
+          SklearnModel(RandomForestRegressor())
+          ]
+
+# ---------- Seleccion de modelos----------
+# models = [AutoARIMA(season_length=season_length),
+#           SeasonalNaive(season_length=season_length),
+#           SklearnModel(Lasso()),
+#           SklearnModel(Ridge()),
+#           SklearnModel(RandomForestRegressor())
+#           ]
+
+# ---------- Construir el modelo ----------
+sf = StatsForecast( models=models,
+                   freq='B', 
+                   fallback_model = SeasonalNaive(season_length=season_length),
+                   n_jobs=-1)
+
+#  ---------- Entrenar el modelo ----------
+# intervals = ConformalIntervals(h = 32, n_windows = 5)
+# sf.fit(df=train, prediction_intervals=intervals)
+
+
+#   ---------- Entrenar el modelo con datos escalados----------
+intervals = ConformalIntervals(h = 32, n_windows = 5)
+sf.fit(df=train_scaled, prediction_intervals=intervals)
+
+# ========== Predicciones ==========
+
+# h = len(test_scaled)
+test_scaled_32 = test_scaled.tail(32)
+
+preds = sf.forecast(
+    df=train_scaled,
+    h=32,  # Ajustar el horizonte de pronóstico
+    X_df=test_scaled_32, 
+    prediction_intervals=ConformalIntervals(n_windows=5, h=32),
+    level=[95],
+)
+preds.head()
+
+
+
+
+
+
+# Guardar predicciones como csv
+preds.to_csv("c19-126-t-data-bi/models/predicciones_AAPL.csv", index=False)
+
+# ---------- Visualización de predicciones ----------
+# def plot_series(ohe, preds, max_insample_length=100, engine="plotly", models=None):
+#     if engine == "plotly":
+#         if models:
+#             for model in models:
+#                 fig = px.line(preds, x='ds', y=model, title=f'Series Plot - {model}')
+#                 fig.show()
+#         else:
+#             fig = px.line(preds, x='ds', y=preds.columns[2:], title='Series Plot')
+#             fig.show()
+#     else:
+#         pass
+
+# plot_series(ohe,  preds.reset_index(),max_insample_length= 100, engine= "plotly")
+# plot_series(ohe,  preds.reset_index(),max_insample_length= 100, engine= "plotly", models = ["AutoARIMA"])
+# plot_series(ohe,  preds.reset_index(),max_insample_length= 100, engine= "plotly", models = ["Lasso"])
+# plot_series(ohe,  preds.reset_index(),max_insample_length= 100, engine= "plotly", models = ["Ridge"])
+# plot_series(ohe,  preds.reset_index(),max_insample_length= 100, engine= "plotly", models = ["RandomForestRegressor"])
+
+
+# ========== Evaluación del modelo ==========
